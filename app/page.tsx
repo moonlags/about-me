@@ -93,6 +93,31 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="flex justify-center flex-col items-center mb-10 max-w-7xl mx-auto mt-10 border-2 pt-5 pb-20 border-gray-300 rounded-xl hover:border-gray-400 duration-1000">
+        <p className="text-gray-800 font-semibold text-3xl">My Projects:</p>
+        <div className="flex flex-row gap-5 justify-center items-center mt-10">
+          <a href="https://github.com/moonlags/GoTodos">
+            <div className="flex justify-center items-center hover:scale-110 flex-col gap-1 bg-gray-200 border-2 border-gray-400 shadow-md rounded-md p-1 hover:border-gray-500 duration-1000">
+              <Image alt="" src={"/gotodos.png"} width={300} height={300} />
+              <p className="font-semibold text-lg text-gray-700">GoTodos</p>
+              <p className="text-gray-600 text-sm">
+                Todo web app created using React + Go
+              </p>
+            </div>
+          </a>
+          <a href="https://github.com/moonlags/CameraTGBot">
+            <div className="flex justify-center items-center hover:scale-110 flex-col gap-1 bg-gray-200 border-2 border-gray-400 shadow-md rounded-md p-1 hover:border-gray-500 duration-1000">
+              <Image alt="" src={"/tgbot.png"} width={300} height={300} />
+              <p className="font-semibold text-lg text-gray-700">
+                Telegram Bot
+              </p>
+              <p className="text-gray-600 text-sm">
+                Bot for taking photos from camera
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
     </>
   );
 }
