@@ -116,6 +116,15 @@ export default function Home() {
               </p>
             </div>
           </a>
+          <a href="https://github.com/moonlags/daily-cats">
+            <div className="flex justify-center items-center hover:scale-110 flex-col gap-1 bg-gray-200 border-2 border-gray-400 shadow-md rounded-md p-1 hover:border-gray-500 duration-1000">
+              <Image alt="" src={"/cats.png"} width={300} height={300} />
+              <p className="font-semibold text-lg text-gray-700">Daily Cats</p>
+              <p className="text-gray-600 text-sm">
+                Get random cats photos and gifs
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </>
