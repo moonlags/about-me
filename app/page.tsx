@@ -37,61 +37,55 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="mt-5 flex justify-center place-items-center">
-        <div className="flex sm:flex-col lg:flex-row gap-5">
+      <div className="mt-5 flex justify-center place-items-center mx-5">
+        <div className="flex flex-col lg:flex-row gap-5">
           <div className="flex flex-col gap-5">
             <a href="https://www.mongodb.com/">
               <div className="hover:scale-110 duration-500 hover:shadow-xl rounded-lg flex flex-row bg-green-100">
                 <div className="flex flex-col gap-1  px-10 py-5">
                   <p className="text-3xl font-bold text-gray-800">MongoDB</p>
-                  <p className="font-semibold text-gray-700">
+                  <p className="font-semibold text-gray-700 max-w-md">
                     <strong>MongoDB</strong> is a source-available
-                    cross-platform
-                    <br />
-                    document-oriented database program.
+                    cross-platform document-oriented database program.
                   </p>
                 </div>
                 <Layers color="#000000" className="ml-auto mt-5 mr-5" />
               </div>
             </a>
-            <a href="https://react.dev/">
-              <div className="hover:scale-110 duration-500 hover:shadow-xl rounded-lg flex flex-row bg-blue-100">
-                <div className="flex flex-col gap-1  px-10 py-5">
-                  <p className="text-3xl font-bold text-gray-800">React</p>
-                  <p className="font-semibold text-gray-700">
-                    <strong>React</strong> is a free and open-source
-                    <br />
-                    front-end JavaScript library for building user interfaces
-                    <br />
-                    based on components.
-                  </p>
-                </div>
-                <Atom color="#000000" className="ml-auto mt-5 mr-5" />
-              </div>
-            </a>
-          </div>
-          <div className="flex flex-col gap-5">
             <a href="https://expressjs.com/">
               <div className="hover:scale-110 duration-500 hover:shadow-xl rounded-lg flex flex-row bg-yellow-100">
                 <div className="flex flex-col gap-1  px-10 py-5">
                   <p className="text-3xl font-bold text-gray-800">Express</p>
-                  <p className="font-semibold text-gray-700">
+                  <p className="font-semibold text-gray-700 max-w-md">
                     <strong>Express</strong> is a minimal and flexible Node.js
-                    <br /> web application framework that provides a robust set
-                    <br />
-                    of features for web and mobile applications.
+                    web application framework that provides a robust set of
+                    features for web and mobile applications.
                   </p>
                 </div>
                 <SquareCode color="#000000" className="ml-auto mt-5 mr-5" />
+              </div>
+            </a>
+          </div>
+          <div className="flex flex-col gap-5">
+            <a href="https://react.dev/">
+              <div className="hover:scale-110 duration-500 hover:shadow-xl rounded-lg flex flex-row bg-blue-100">
+                <div className="flex flex-col gap-1  px-10 py-5">
+                  <p className="text-3xl font-bold text-gray-800">React</p>
+                  <p className="font-semibold text-gray-700 max-w-sm">
+                    <strong>React</strong> is a free and open-source front-end
+                    JavaScript library for building user interfaces based on
+                    components.
+                  </p>
+                </div>
+                <Atom color="#000000" className="ml-auto mt-5 mr-5" />
               </div>
             </a>
             <a href="https://nodejs.org/">
               <div className="hover:scale-110 duration-500 hover:shadow-xl flex flex-row bg-lime-100 rounded-lg">
                 <div className="flex flex-col gap-1  px-10 py-5">
                   <p className="text-3xl font-bold text-gray-800">Node.js</p>
-                  <p className="font-semibold text-gray-700">
+                  <p className="font-semibold text-gray-700 max-w-md">
                     <strong>Node.js</strong> is an open-source, cross-platform
-                    <br />
                     JavaScript runtime environment.
                   </p>
                 </div>
@@ -104,9 +98,9 @@ export default function Home() {
       <div className="bg-gray-200 mx-auto w-10 h-10 animate-bounce flex items-center rounded-full mt-14">
         <ArrowDown color="#000000" className="m-auto" />
       </div>
-      <div className="flex justify-center flex-col items-center mb-10 max-w-6xl mx-auto mt-10 border-2 pt-5 px-5 pb-20 border-gray-300 rounded-xl hover:border-gray-400 duration-1000">
+      <div className="flex justify-center flex-col items-center mb-10 max-w-6xl mx-5 lg:mx-auto mt-10 border-2 pt-5 px-5 pb-20 border-gray-300 rounded-xl hover:border-gray-400 duration-1000">
         <p className="text-gray-700 font-semibold text-3xl">My Projects:</p>
-        <div className="flex lg:flex-row sm:flex-col gap-7 justify-center items-center mt-10">
+        <div className="flex lg:flex-row flex-col gap-7 justify-center items-center mt-10">
           <a href="https://github.com/moonlags/GoTodos">
             <div className="flex justify-center items-center hover:scale-110 flex-col gap-1 bg-gray-100 shadow-md rounded-md p-2 duration-500">
               <Image
