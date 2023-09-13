@@ -5,13 +5,13 @@ export default function Home() {
   return (
     <>
       <div className="bg-gray-300 w-screen px-10 py-5 shadow-md">
-        <div className="flex flex-row gap-7 content-center">
-          <p className="text-gray-950 font-semibold ml-auto text-2xl">
+        <div className="flex flex-row gap-7 items-center">
+          <p className="text-gray-950 font-semibold mx-auto text-2xl">
             About Me
           </p>
         </div>
       </div>
-      <div className="w-screen flex justify-center flex-col place-items-center p-10">
+      <div className="flex justify-center flex-col place-items-center p-10">
         <p className="text-3xl font-bold text-gray-800 m-5">
           Hello, my name is Alexander!
         </p>
@@ -37,8 +37,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="w-screen mt-5 flex justify-center place-items-center">
-        <div className="flex flex-row gap-5">
+      <div className="mt-5 flex justify-center place-items-center">
+        <div className="flex sm:flex-col lg:flex-row gap-5">
           <div className="flex flex-col gap-5">
             <a href="https://www.mongodb.com/">
               <div className="hover:scale-110 duration-500 hover:shadow-xl rounded-lg flex flex-row bg-green-100">
@@ -101,12 +101,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-200 mx-auto w-10 h-10 place-self-start animate-bounce flex items-center rounded-full mt-14">
+      <div className="bg-gray-200 mx-auto w-10 h-10 animate-bounce flex items-center rounded-full mt-14">
         <ArrowDown color="#000000" className="m-auto" />
       </div>
-      <div className="flex justify-center flex-col items-center mb-10 max-w-7xl mx-auto mt-10 border-2 pt-5 pb-20 border-gray-300 rounded-xl hover:border-gray-400 duration-1000">
+      <div className="flex justify-center flex-col items-center mb-10 max-w-6xl mx-auto mt-10 border-2 pt-5 px-5 pb-20 border-gray-300 rounded-xl hover:border-gray-400 duration-1000">
         <p className="text-gray-700 font-semibold text-3xl">My Projects:</p>
-        <div className="flex flex-row gap-7 justify-center items-center mt-10">
+        <div className="flex lg:flex-row sm:flex-col gap-7 justify-center items-center mt-10">
           <a href="https://github.com/moonlags/GoTodos">
             <div className="flex justify-center items-center hover:scale-110 flex-col gap-1 bg-gray-100 shadow-md rounded-md p-2 duration-500">
               <Image
