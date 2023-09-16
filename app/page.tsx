@@ -1,5 +1,5 @@
 import { ArrowDown, Atom, Hexagon, Layers, SquareCode } from "lucide-react";
-import Image from "next/image";
+import Project from "./components/Project";
 
 export default function Home() {
   return (
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-5 flex justify-center place-items-center mx-5">
-        <div className="flex flex-col lg:flex-row gap-5">
+        <div className="flex flex-col md:flex-row gap-5">
           <div className="flex flex-col gap-5">
             <a href="https://www.mongodb.com/">
               <div className="hover:scale-110 duration-500 hover:shadow-xl rounded-lg flex flex-row bg-green-100">
@@ -98,56 +98,30 @@ export default function Home() {
       <div className="bg-gray-200 mx-auto w-10 h-10 animate-bounce flex items-center rounded-full mt-14">
         <ArrowDown color="#000000" className="m-auto" />
       </div>
-      <div className="flex justify-center flex-col items-center mb-10 max-w-6xl mx-5 lg:mx-auto mt-10 border-2 pt-5 px-5 pb-20 border-gray-300 rounded-xl hover:border-gray-400 duration-1000">
+      <div className="flex justify-center flex-col items-center mb-10 max-w-6xl mx-5 xl:mx-auto mt-10 border-2 pt-5 px-5 pb-20 border-gray-300 rounded-xl hover:border-gray-400 duration-1000">
         <p className="text-gray-700 font-semibold text-3xl">My Projects:</p>
-        <div className="flex lg:flex-row flex-col gap-7 justify-center items-center mt-10">
-          <a href="https://github.com/moonlags/GoTodos">
-            <div className="flex justify-center items-center hover:scale-110 flex-col gap-1 bg-gray-100 shadow-md rounded-md p-2 duration-500">
-              <Image
-                alt=""
-                src={"/gotodos.png"}
-                width={300}
-                height={300}
-                className="rounded-sm"
-              />
-              <p className="font-semibold text-lg text-gray-700">GoTodos</p>
-              <p className="text-gray-600 text-sm">
-                Todo web app created using React + Express
-              </p>
-            </div>
-          </a>
-          <a href="https://github.com/moonlags/CameraTGBot">
-            <div className="flex justify-center items-center hover:scale-110 flex-col gap-1 bg-gray-100 shadow-md rounded-md p-2 duration-500">
-              <Image
-                alt=""
-                src={"/tgbot.png"}
-                width={300}
-                height={300}
-                className="rounded-sm"
-              />
-              <p className="font-semibold text-lg text-gray-700">
-                Telegram Bot
-              </p>
-              <p className="text-gray-600 text-sm">
-                Bot for taking photos from camera
-              </p>
-            </div>
-          </a>
-          <a href="https://github.com/moonlags/daily-cats">
-            <div className="flex justify-center items-center hover:scale-110 flex-col gap-1 bg-gray-100 shadow-md rounded-md p-2 duration-500">
-              <Image
-                alt=""
-                src={"/cats.png"}
-                width={300}
-                height={300}
-                className="rounded-sm"
-              />
-              <p className="font-semibold text-lg text-gray-700">Daily Cats</p>
-              <p className="text-gray-600 text-sm">
-                Get random cats photos and gifs
-              </p>
-            </div>
-          </a>
+        <div className="flex md:flex-row flex-col gap-7 justify-center flex-wrap items-center mt-10">
+          <Project
+            name="GoTodos"
+            link="https://github.com/moonlags/GoTodos"
+            imgpath="/gotodos.png"
+            smdesc="Todo web app created using React + Express"
+            desc="lorem ipsum"
+          />
+          <Project
+            name="Telegram Bot"
+            link="https://github.com/moonlags/CameraTGBot"
+            imgpath="/tgbot.png"
+            smdesc="Bot for taking photos from camera"
+            desc="lorem ipsum"
+          />
+          <Project
+            name="Daily Cats"
+            link="https://github.com/moonlags/daily-cats"
+            imgpath="/cats.png"
+            smdesc="Get random cats photos and gifs"
+            desc="lorem ipsum"
+          />
         </div>
       </div>
     </>
