@@ -4,6 +4,7 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -37,6 +38,7 @@ const Project = (project: ProjectType) => {
           </DialogTitle>
         </DialogHeader>
         <p>{project.desc}</p>
+        <DialogFooter>technologies footer</DialogFooter>
       </DialogContent>
     </Dialog>
   );
