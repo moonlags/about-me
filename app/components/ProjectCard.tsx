@@ -49,8 +49,11 @@ const ProjectCard = (project: Project) => {
         <Separator />
         <DialogFooter>
           <div className="flex flex-row flex-wrap gap-2 max-w-xl">
-            {project.tech.map((item) => (
-              <div className="border border-gray-400 gap-1 px-2 flex flex-row rounded-xl place-items-center">
+            {project.tech.map((item, index) => (
+              <div
+                key={index}
+                className="border border-gray-400 gap-1 px-2 flex flex-row rounded-xl place-items-center"
+              >
                 <div className="bg-gray-700 rounded-full w-2 h-2" />
                 {item}
               </div>
