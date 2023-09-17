@@ -4,6 +4,7 @@ type ProjectType = {
   imgpath: string;
   smdesc: string;
   desc: string;
+  tech: string[];
 };
 
 export default ProjectType;

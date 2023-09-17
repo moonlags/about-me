@@ -28,7 +28,7 @@ const Project = (project: ProjectType) => {
           <p className="text-gray-600 text-sm">{project.smdesc}</p>
         </div>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
           <DialogTitle>
             {project.name}
@@ -38,7 +38,16 @@ const Project = (project: ProjectType) => {
           </DialogTitle>
         </DialogHeader>
         <p>{project.desc}</p>
-        <DialogFooter>technologies footer</DialogFooter>
+        <DialogFooter className="mt-3">
+          <div className="flex flex-row flex-wrap gap-2 max-w-xl">
+            {project.tech.map((item) => (
+              <div className="border border-gray-400 gap-1 px-2 flex flex-row rounded-xl place-items-center">
+                <div className="bg-gray-700 rounded-full w-2 h-2" />
+                {item}
+              </div>
+            ))}
+          </div>
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   );

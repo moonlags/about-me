@@ -106,7 +106,8 @@ export default function Home() {
             link="https://github.com/moonlags/GoTodos"
             imgpath="/gotodos.png"
             smdesc="Todo web app created using React + Express"
-            desc="lorem ipsum"
+            desc="GoTodos is a simple web application I created using Node.js with its framework Express and React on frontend. For this project I used MongoDB. In this project I implemented custom JWT auth and cookie based sessions."
+            tech={["Express", "React", "MongoDB", "Node.js", "JWT"]}
           />
           <Project
             name="Telegram Bot"
@@ -114,6 +115,7 @@ export default function Home() {
             imgpath="/tgbot.png"
             smdesc="Bot for taking photos from camera"
             desc="lorem ipsum"
+            tech={["GoLang", "Python"]}
           />
           <Project
             name="Daily Cats"
@@ -121,6 +123,7 @@ export default function Home() {
             imgpath="/cats.png"
             smdesc="Get random cats photos and gifs"
             desc="lorem ipsum"
+            tech={["JavaScript", "React"]}
           />
         </div>
       </div>
