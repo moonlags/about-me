@@ -1,4 +1,4 @@
-type ProjectType = {
+type Project = {
   name: string;
   link: string;
   imgpath: string;
@@ -7,4 +7,4 @@ type ProjectType = {
   tech: string[];
 };
 
-export default ProjectType;
+export default Project;

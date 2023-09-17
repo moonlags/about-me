@@ -1,5 +1,5 @@
 import { ArrowDown, Atom, Hexagon, Layers, SquareCode } from "lucide-react";
-import Project from "./components/Project";
+import Project from "./components/ProjectCard";
 
 export default function Home() {
   return (
@@ -114,7 +114,7 @@ export default function Home() {
             link="https://github.com/moonlags/CameraTGBot"
             imgpath="/tgbot.png"
             smdesc="Bot for taking photos from camera"
-            desc="lorem ipsum"
+            desc="This is Telegram bot created using GoLang and Python. While GoLang is used to fully write Telegram bot, with Python my dad created scripts to connect to camera and take photos from it."
             tech={["GoLang", "Python"]}
           />
           <Project
@@ -122,7 +122,7 @@ export default function Home() {
             link="https://github.com/moonlags/daily-cats"
             imgpath="/cats.png"
             smdesc="Get random cats photos and gifs"
-            desc="lorem ipsum"
+            desc="This is a simple web app used to get random images and gifs of cats. I created this mini project using JavaScript and React. I used cataas.com for API."
             tech={["JavaScript", "React"]}
           />
         </div>

@@ -9,10 +9,11 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
-import ProjectType from "../types/ProjectType";
+import Project from "../types/ProjectType";
 
-const Project = (project: ProjectType) => {
+const ProjectCard = (project: Project) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -28,7 +29,7 @@ const Project = (project: ProjectType) => {
           <p className="text-gray-600 text-sm">{project.smdesc}</p>
         </div>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[500px]">
+      <DialogContent className="w-[50vh] sm:max-w-[500px] rounded-sm">
         <DialogHeader>
           <DialogTitle>
             {project.name}
@@ -38,7 +39,15 @@ const Project = (project: ProjectType) => {
           </DialogTitle>
         </DialogHeader>
         <p>{project.desc}</p>
-        <DialogFooter className="mt-3">
+        <Image
+          src={project.imgpath}
+          alt={project.name}
+          width={500}
+          height={500}
+          className="rounded-sm border mt-1 mb-2"
+        />
+        <Separator />
+        <DialogFooter>
           <div className="flex flex-row flex-wrap gap-2 max-w-xl">
             {project.tech.map((item) => (
               <div className="border border-gray-400 gap-1 px-2 flex flex-row rounded-xl place-items-center">
@@ -53,4 +62,4 @@ const Project = (project: ProjectType) => {
   );
 };
 
-export default Project;
+export default ProjectCard;
