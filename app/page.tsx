@@ -17,7 +17,7 @@ export default function Home() {
         </p>
         <p className="text-xl font-semibold text-gray-700">
           I am 15 years old developer, with programming expierence
-          <br /> using Python, C++, GoLang, JavaScript and Node.js.
+          <br /> using Python, C++, GoLang, JavaScript, TypeScript and Node.js.
         </p>
         <p className="text-lg font-semibold text-gray-600 mt-12">
           But my main tech stack is:
