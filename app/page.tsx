@@ -11,13 +11,13 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center flex-col place-items-center p-10">
+      <div className="flex justify-center flex-col items-center p-10">
         <p className="text-3xl font-bold text-gray-800 m-5">
           Hello, my name is Alexander!
         </p>
-        <p className="text-xl font-semibold text-gray-700">
-          I am 15 years old developer, with programming expierence
-          <br /> using Python, C++, GoLang, JavaScript, TypeScript and Node.js.
+        <p className="text-xl font-semibold text-gray-700 max-w-xl text-center">
+          I am 15 years old developer, with programming expierence using C++,
+          GoLang, JavaScript, TypeScript, Node.js, MySQL and MongoDB.
         </p>
         <p className="text-lg font-semibold text-gray-600 mt-12">
           But my main tech stack is:
