@@ -1,5 +1,3 @@
-//TODO implement structure for project
-
 import {
   Dialog,
   DialogContent,
@@ -17,7 +15,7 @@ const ProjectCard = (project: Project) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="flex justify-center items-center hover:scale-110 flex-col gap-1 bg-gray-100 shadow-md rounded-md p-2 w-72 h-60 duration-500">
+        <div className="flex justify-center items-center hover:scale-110 flex-col gap-1 bg-gray-200 shadow-md rounded-md p-2 w-72 h-60 duration-500">
           <Image
             alt={project.name}
             src={project.imgpath}
