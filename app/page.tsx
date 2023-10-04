@@ -53,7 +53,7 @@ export default function Home() {
           </div>
         </div>
         <Separator className="w-[620px] mx-auto" />
-        <div className="flex flex-row gap-16 justify-between mx-auto">
+        <div className="flex flex-row gap-16 justify-between mx-auto mt-3">
           <Image src={"/next.png"} alt="next-js" width={28} height={28} />
           <Image
             src={"/typescript.png"}
