@@ -53,6 +53,33 @@ export default function Home() {
           </div>
         </div>
         <Separator className="w-[620px] mx-auto" />
+        <div className="flex flex-row gap-16 justify-between mx-auto">
+          <Image src={"/next.png"} alt="next-js" width={28} height={28} />
+          <Image
+            src={"/typescript.png"}
+            alt="typescript"
+            width={28}
+            height={28}
+            className="rounded-md"
+          />
+          <Image src={"/trpc.png"} alt="trpc" width={28} height={28} />
+          <Image
+            src={"/prisma.png"}
+            alt="prisma"
+            width={28}
+            height={28}
+            className="h-7"
+          />
+          <Image src={"/nextauth.png"} alt="nextAuth" width={28} height={28} />
+          <Image
+            src={"/tailwind.png"}
+            alt="tailwind"
+            width={24}
+            height={24}
+            className="w-10"
+          />
+          <Image src={"/postgres.svg"} alt="postgres" width={28} height={28} />
+        </div>
       </div>
     </div>
   );
